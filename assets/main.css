@@ -169,3 +169,247 @@ form input {
   cursor: pointer;
   border-radius: 4px;
 }
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.mobile-nav_nav {
+  display: block;
+  height: 5rem;
+  /* border-bottom: 1px solid #10162f; */
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.mobile-wrapper {
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+}
+
+.mobile-menubar {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.mobile-menubar__li-logo {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+}
+
+.mobile-menubar__logo {
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  display: inline-block;
+  position: relative;
+  color: #10162f;
+  padding: 0.25rem 0;
+}
+
+.mobile-menubar__logo-svg {
+  overflow: hidden;
+  height: 27px;
+  vertical-align: text-bottom;
+}
+
+.mobile-menubar__li-close {
+  margin-left: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: inherit;
+}
+
+.mobile-menubar__li-close {
+}
+
+.mobile-menubar__li-close-svg {
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  /* width: calc(100% - 14px);
+  height: calc(100% - 14px); */
+}
+
+.mobile-menubar__two {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menubar__two-search {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mobile-menubar__two-form {
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-menubar__two-form-input {
+  outline: none;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid #10162f;
+  font-size: 1rem;
+  width: 100%;
+  color: #10162f;
+}
+.mobile-menubar__two-form-input-search {
+  transform: translate(0px, -50%);
+  cursor: pointer;
+  outline: 0px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  color: #10162f;
+}
+.mobile-menubar__two-form-input-svg {
+  width: 16px;
+  height: 16px;
+}
+
+.mobile-menubar__two-catalog,
+.mobile-menubar__two-resources {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.mobile-menubar__two-catalog-a {
+  cursor: pointer;
+  background: none transparent;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 0px;
+  font-size: inherit;
+  box-shadow: none;
+  position: relative;
+  color: var(--color-text);
+  display: flex;
+  min-width: 0px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.mobile-menubar__two-catalog-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+
+.mobile-menubar__two-resources-btn {
+  border: none;
+  padding: 1rem 0px;
+  font-size: inherit;
+  white-space: initial;
+  box-shadow: none;
+  position: relative;
+  color: var(--color-text);
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+}
+.mobile-menubar__two-resources-svg {
+  width: 24px;
+  height: 24px;
+}
+.mobile-menubar__two-resources-svg-span {
+  font-size: inherit;
+  display: inline-block;
+  margin: 0px 0px 0px 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 70vw;
+}
+
+.mobile-menubar__two-resources-svg-span-svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
