@@ -193,7 +193,7 @@ form input {
 }
 
 .mobile-nav {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 101;
   top: 0;
@@ -371,7 +371,7 @@ form input {
   white-space: initial;
   box-shadow: none;
   position: relative;
-  color: var(--color-text);
+  color: #10162f;
   background-color: transparent;
   display: flex;
   width: 100%;
@@ -397,6 +397,13 @@ form input {
   margin-left: auto;
 }
 
+.mobile-menubar__two-community {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
 .mobile-nav__items {
   width: 90%;
   height: 100%;
@@ -406,10 +413,140 @@ form input {
   text-align: center;
 }
 
-.mobile-nav__item {
-  margin: 1rem 0;
+.mobile-menubar__two-community-btn {
+  border: none;
+  padding: 1rem 0px;
+  font-size: inherit;
+  white-space: initial;
+  box-shadow: none;
+  position: relative;
+  color: #10162f;
+  background-color: transparent;
+  display: flex;
+  width: 100%;
 }
 
-.mobile-nav__item a {
-  font-size: 1.5rem;
+.mobile-menubar__two-community-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menubar__two-community-svg-span {
+  font-size: inherit;
+  display: inline-block;
+  margin: 0px 0px 0px 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 70vw;
+}
+
+.mobile-menubar__two-community-svg-span-svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+
+.mobile-menubar__two-pricing {
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.mobile-menubar__two-pricing-btn {
+  border: none;
+  padding: 1rem 0px;
+  font-size: inherit;
+  white-space: initial;
+  box-shadow: none;
+  position: relative;
+  color: #10162f;
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+}
+
+.mobile-menubar__two-pricing-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menubar__two-pricing-svg-span {
+  font-size: inherit;
+  display: inline-block;
+  margin: 0px 0px 0px 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 70vw;
+}
+
+.mobile-menubar__two-pricing-svg-span-svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+
+.mobile-menubar__two-business {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.mobile-menubar__two-business a {
+  cursor: pointer;
+  background: none transparent;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 0px;
+  font-size: inherit;
+  box-shadow: none;
+  position: relative;
+  color: #10162f;
+  display: flex;
+  min-width: 0px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.mobile-menubar__two-business-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+
+.mobile-menubar__signup {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.mobile-menubar__signup-btn::before {
+  content: '';
+  transition: opacity 150ms linear 0s;
+  border: 2px solid blue;
+  position: absolute;
+  inset: -5px;
+  z-index: 0;
+  opacity: 0;
+  border-radius: 6px;
+}
+
+.mobile-menubar__signup-btn::after {
+  content: '';
+  transition: opacity 150ms ease-in 0s;
+  position: absolute;
+  inset: -2px;
+  z-index: 0;
+  opacity: 0;
+  border-radius: 4px;
+  background-color: blue;
 }
