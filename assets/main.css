@@ -11,6 +11,10 @@ body {
   margin: 0 30px;
 }
 
+.open {
+  display: block !important;
+}
+
 .header__main,
 .header__main-one,
 .header__main-two {
@@ -178,6 +182,7 @@ form input {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
+  /* display: none; */
 }
 
 .toggle-button:focus {
@@ -193,7 +198,7 @@ form input {
 }
 
 .mobile-nav {
-  /* display: none; */
+  display: none;
   position: fixed;
   z-index: 101;
   top: 0;
@@ -207,7 +212,6 @@ form input {
 .mobile-nav_nav {
   display: block;
   height: 5rem;
-  /* border-bottom: 1px solid #10162f; */
   width: 100%;
   top: 0;
   z-index: 2;
