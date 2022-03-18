@@ -19,7 +19,11 @@ body {
 .header__main-one,
 .header__main-two {
   display: flex;
-  align-items: center;
+}
+
+.header__main-one,
+.header__main-two {
+  display: none;
 }
 
 .codecademy {
@@ -32,8 +36,8 @@ body {
   width: 70vw;
 }
 .header__main-two {
-  justify-content: center;
-  width: 30vw;
+  justify-content: space-between;
+  width: 90vw;
 }
 
 .header_main-lists {
@@ -46,14 +50,13 @@ body {
   display: flex;
   list-style: none;
   padding: 1rem;
-  font-size: 1.2rem;
   font-weight: 800;
   align-items: center;
 }
 
 .header__main-two-search {
   height: 20px;
-  margin-right: 2rem;
+  display: none;
 }
 
 .header__main-two-login a {
@@ -63,46 +66,49 @@ body {
 
 .main__main {
   display: flex;
-  padding: 2rem;
-  height: 620px;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .main__section-one,
 .main__section-two {
-  height: 526px;
-  width: 50%;
+  height: 500px;
+  width: 100%;
+  max-width: 605px;
 }
 
 .main__section-one-img {
   height: 90%;
   width: 90%;
+  max-width: 460px;
+  min-width: 340px;
   margin-top: 20px;
   margin-left: 30px;
-  top: 60px;
-  left: 20px;
   position: relative;
+  top: 60px;
 }
 
 .main__section-one-img img {
-  height: 70%;
-  width: 80%;
+  height: 60%;
+  width: 70%;
+  min-width: 236px;
   object-fit: cover;
   border: 1px solid black;
   box-shadow: -15px 15px 5px rgba(22, 21, 21, 0.924);
-
   position: absolute;
   top: -10px;
   left: 10px;
 }
 
 .main__section-two-div {
-  width: 25rem;
+  width: 80%;
+  margin-left: 1rem;
 }
 
 .main__section-two-div h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
   padding-bottom: 1rem;
@@ -120,7 +126,7 @@ body {
 .main__section-two-form-password {
   display: flex;
   flex-direction: column;
-  /* padding: 1rem; */
+  font-size: 1rem;
 }
 
 form label {
@@ -137,6 +143,7 @@ form input {
   padding-left: 0.8rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .main__section-two-form-button {
@@ -150,9 +157,6 @@ form input {
   background-color: #3a10e5;
   color: #ffffff;
 }
-
-/* .main__section-two-disclaimer {
-} */
 
 .main__section-two-alt_login h3 {
   margin-bottom: 5px;
@@ -182,7 +186,6 @@ form input {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
-  /* display: none; */
 }
 
 .toggle-button:focus {
@@ -276,15 +279,10 @@ form input {
   line-height: inherit;
 }
 
-.mobile-menubar__li-close {
-}
-
 .mobile-menubar__li-close-svg {
   overflow: hidden;
   width: 20px;
   height: 20px;
-  /* width: calc(100% - 14px);
-  height: calc(100% - 14px); */
 }
 
 .mobile-menubar__two {
@@ -553,4 +551,58 @@ form input {
   opacity: 0;
   border-radius: 4px;
   background-color: blue;
+}
+
+@media (min-width: 65rem) {
+  .main__main {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .header__main .header__main-one,
+  .header__main-two {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__main-two {
+    width: 30vw;
+  }
+  .toggle-button {
+    display: none;
+  }
+  .header__main-two-search {
+    display: block;
+  }
+  .main__main {
+    display: flex;
+    padding: 2rem;
+    height: 620px;
+    align-items: center;
+  }
+  .main__section-one,
+  .main__section-two {
+    height: 526px;
+    width: 50%;
+    max-width: 605px;
+  }
+
+  .main__section-one-img {
+    top: 60px;
+    left: 20px;
+    max-width: 600px;
+    position: relative;
+  }
+
+  .main__section-one-img img {
+    height: 70%;
+    width: 80%;
+  }
+
+  .main__section-two-div {
+    width: 25rem;
+  }
+
+  .main__section-two-div h1 {
+    font-size: 2rem;
+  }
 }
